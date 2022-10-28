@@ -1,12 +1,12 @@
 # Searching the LRS
 # convert hex file to decimal file
-python convert2int.py hex_file dec_file_output
+python convert2int.py hex_file dec_file
 
 # generate suffix array
-python sa.py dec_file sa_file_output
+python sa.py dec_file sa_file
 
 # build rank array and height array
-python get_rank_height.py dec_file sa_file rank_file_output height_file_output
+python get_rank_height.py dec_file sa_file rank_file height_file
 
 # find pattern
 python find_repeat.py height_file sa_file dec_file THRES_NUM
